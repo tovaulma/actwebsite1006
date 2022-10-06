@@ -1,0 +1,5 @@
+export { default as Navbar } from './Navbar'
+export { default as Home } from './Home'
+export { default as News } from './News'
+export { default as Team } from './Team'
+export { default as Careers } from './Careers'
