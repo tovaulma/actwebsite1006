@@ -8,6 +8,7 @@ import {
   News,
   Team,
   Careers,
+  Footer,
 } from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
