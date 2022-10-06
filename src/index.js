@@ -13,7 +13,7 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
+  <Router className="overflow-hidden">
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />

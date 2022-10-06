@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="h-10 absolute bg-[#252525] w-screen text-white overflow-hidden">
+    <div className="h-[10rem] relative bg-white w-[100%] text-[#252525] overflow-hidden">
         Footer
     </div>
   )

@@ -32,7 +32,7 @@ const Main = () => {
                 We pursue the goal that the original and game contents can grow together.</p>
             </motion.div>
         </div>
-        <div className="absolute w-[100%] h-[5%] md:w-[20%] md:h-[50%] md:skew-x-6 bg-[#fec836] z-10">
+        <div className="absolute w-[100%] h-[5%] md:w-[20%] md:h-screen md:skew-x-6 bg-[#fec836] z-10">
         </div>
         <div className="flex p-10 items-center justify-end w-[100%] h-[50%] md:w-[50%] md:h-[100%] bg-[#50c5e5]">
             <motion.div 
