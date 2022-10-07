@@ -5,10 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Navbar,
   Home,
-  News,
+  Blog,
   Team,
   Careers,
   Footer,
+  SinglePost
 } from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +18,8 @@ root.render(
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/News" element={<News />} />
+      <Route path="/Blog" element={<Blog />} />
+      <Route path="/Blog/:slug" element={<SinglePost />} />
       <Route path="/Team" element={<Team />} />
       <Route path="/Careers" element={<Careers />} />
     </Routes>

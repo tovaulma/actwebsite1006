@@ -52,7 +52,7 @@ const Navbar = () => {
                         <NavLink to='/'>About</NavLink>
                     </li>
                     <li className="hover:text-orange-300">
-                        <NavLink to='/News'>News</NavLink>
+                        <NavLink to='/Blog'>Blog</NavLink>
                     </li>
                     <li className="hover:text-orange-300">
                         <NavLink to='/Team'>Team</NavLink>

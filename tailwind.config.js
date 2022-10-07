@@ -20,7 +20,9 @@ module.exports = {
       '2xl': '1670px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      'blog-pattern': "url('/src/assets/images/BlogImage.jpg)"
+    },
   },
   plugins: [],
 }
