@@ -6,7 +6,7 @@ import BlogSnippet from './BlogSnippet'
 
 const Home = () => {
   return (
-    <div className='overflow-y-hidden'>
+    <div className='overflow-x-hidden'>
       <Main />
       <Games />
       <BlogSnippet />

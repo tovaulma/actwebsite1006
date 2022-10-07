@@ -88,7 +88,7 @@ const Games = () => {
       ref={sliderRef}
       >
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[100%] p-[5%]"/>
+          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">ZOIDS WILD NFT ARENA</h1>
           <h2 className="text-sm text-center">Released on December 2022</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -112,7 +112,7 @@ const Games = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className=" w-[100%] p-[5%]"/>
+          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Shakurel Planet</h1>
           <h2 className="text-sm text-center">Released on June 2022</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -135,7 +135,7 @@ const Games = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[100%] p-[5%]"/>
+          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Bubble Bobble</h1>
           <h2 className="text-sm text-center">Released on November 2021</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -158,7 +158,7 @@ const Games = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[100%] p-[5%]"/>
+          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Peko Pop: Match 3 Puzzle</h1>
           <h2 className="text-sm text-center">Released on December 2020</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -181,7 +181,7 @@ const Games = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[100%] p-[5%]"/>
+          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Aggretsuko</h1>
           <h2 className="text-sm text-center">Released on July 2020</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
