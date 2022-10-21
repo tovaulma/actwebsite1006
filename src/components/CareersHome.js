@@ -14,7 +14,7 @@ const CareersHome = () => {
         transition={{
             duration: 1.5
         }}>
-            <h1 className='uppercase text-white text-center w-screen align-center'>Careers @ ACT</h1>
+            <h1 className='uppercase text-white text-center w-screen align-center text-3xl font-semibold'>Careers @ ACT</h1>
         </motion.div>
     </div>
   )

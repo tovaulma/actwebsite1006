@@ -9,13 +9,13 @@ const MenuItems = ({showMenu, active}) => {
             <a href='/'>About</a>
         </li>
         <li>
-            <a href='/'>News</a>
+            <a href='/Blog'>Blog</a>
         </li>
         <li>
-            <a href='/'>Team</a>
+            <a href='/Team'>Team</a>
         </li>
         <li>
-            <a href='/'>Careers</a>
+            <a href='/Careers'>Careers</a>
         </li>
     </ul>
   )

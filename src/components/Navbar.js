@@ -13,7 +13,7 @@ const Navbar = () => {
       setActive(!active)
     }
   return (
-    <div className="absolute flex flex-row w-screen top-0 p-10 items-start justify-between mx-auto z-100 xl:items-center content-center">
+    <div className="fixed flex flex-row w-screen top-0 p-8 items-start justify-between mx-auto z-100 xl:items-center content-center bg-[#252525]/40 bg-opacity-100 z-20">
         <nav className="flex flex-row w-screen justify-between">
             <NavLink to ='/'>
                 <motion.img
@@ -26,7 +26,7 @@ const Navbar = () => {
                     opacity: 1,
                 }}
                 transition={{
-                    duration: 1.5
+                    duration: 1
                 }}
                 className="flex flex-row items-center h-[3rem] md:h-[4rem]"
                 src={ACTLogoBW}/>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 opacity: 1,
             }}
                 transition={{
-                duration: 1.5
+                duration: 1
             }}
             className="flex flex-row items-center text-white cursor-pointer">
                 <div className="md:hidden">

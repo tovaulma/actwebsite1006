@@ -1,12 +1,14 @@
 import Zoids from '../assets/images/Zoids.png'
 import Peko from '../assets/images/Peko.png'
 import Aggretsuko from '../assets/images/Aggretsuko.png'
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const ImageCarousel = () => {
+  const imgRef = useRef(null)
+
   return (
     <div>
-      <img src={Zoids} id="imageCar" className='hidden'/>
+      <img ref={imgRef}/>
     </div>
   )
 }

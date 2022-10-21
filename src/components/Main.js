@@ -24,10 +24,10 @@ const Main = () => {
                 scale: 1
             }}
                 transition={{
-                duration: 1.5
+                duration: 1
             }}>
                 <h1 className="w-[100%] md:w-[70%] tracking-[1px] font-semibold text-2xl p-2">Across Culture and Technology.</h1>
-                <p className="w-[100%] md:w-[70%] p-2">We want to provide content that permeates the game with the impression of famous IP works. 
+                <p className="w-[100%] md:w-[70%] p-2 hidden md:block">We want to provide content that permeates the game with the impression of famous IP works. 
                 We do not stop researching and making efforts to make the pleasure of the original work recreated as game content. 
                 We pursue the goal that the original and game contents can grow together.</p>
             </motion.div>

@@ -2,7 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from 'framer-motion';
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import Aggretsuko from '../assets/images/Aggretsuko.jpeg'
+import Aggretsuko from '../assets/images/agg2.jpg'
+import Zoids from '../assets/images/zoids_c_art.jpg'
+import Peko from '../assets/images/peko.jpg'
+import Mogmog from '../assets/images/mogmog.png'
+import Bubs from '../assets/images/bubs2.png'
 import Apple from '../assets/icons/apple.png'
 import Android from '../assets/icons/android.png'
 import Windows from '../assets/icons/windows.png'
@@ -25,6 +29,24 @@ const Games = () => {
     }, 
     {
       y: 0,
+      opacity: 1,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: el
+      }
+    })
+  }, [])
+
+  const iconRef = useRef(null)
+  useEffect(() => {
+    const el = iconRef.current;
+    gsap.fromTo(el, 
+    {
+      x: 500,
+      opacity: 0
+    }, 
+    {
+      x: 0,
       opacity: 1,
       duration: 1.5,
       scrollTrigger: {
@@ -84,11 +106,11 @@ const Games = () => {
           slidesPerView: 5,
         }
       }}
-      className="mySwiper relative w-screen"
+      className="mySwiper relative w-[90%] md:w-[100%]"
       ref={sliderRef}
       >
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
+          <img src={Zoids} className="w-[90%] h-[200px] rounded-lg m-[5%] object-cover"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">ZOIDS WILD NFT ARENA</h1>
           <h2 className="text-sm text-center">Released on December 2022</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -106,13 +128,13 @@ const Games = () => {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.9 }}
-            className="uppercase text-sm m-4 p-1 border rounded-md border-[#252525] hover:bg-orange-300">
+            className="uppercase text-sm m-4 p-2 border rounded-full border-[#252525]">
               Read More
             </motion.button>
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
+          <img src={Mogmog} className="w-[90%] h-[200px] rounded-lg m-[5%] object-cover"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Shakurel Planet</h1>
           <h2 className="text-sm text-center">Released on June 2022</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -129,13 +151,13 @@ const Games = () => {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.9 }}
-            className="uppercase text-sm m-4 p-1 border rounded-md border-[#252525] hover:bg-orange-300">
+            className="uppercase text-sm m-4 p-2 border rounded-full border-[#252525]">
               Read More
             </motion.button>
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
+          <img src={Bubs} className="w-[90%] h-[200px] rounded-lg m-[5%] object-cover"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Bubble Bobble</h1>
           <h2 className="text-sm text-center">Released on November 2021</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -152,13 +174,13 @@ const Games = () => {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.9 }}
-            className="uppercase text-sm m-4 p-1 border rounded-md border-[#252525] hover:bg-orange-300">
+            className="uppercase text-sm m-4 p-2 border rounded-full border-[#252525]">
               Read More
             </motion.button>
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
+          <img src={Peko} className="w-[90%] h-[200px] rounded-lg m-[5%] object-cover"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Peko Pop: Match 3 Puzzle</h1>
           <h2 className="text-sm text-center">Released on December 2020</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -175,13 +197,13 @@ const Games = () => {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.9 }}
-            className="uppercase text-sm m-4 p-1 border rounded-md border-[#252525] hover:bg-orange-300">
+            className="uppercase text-sm m-4 p-2 border rounded-full border-[#252525]">
               Read More
             </motion.button>
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Aggretsuko} className="w-[90%] rounded-lg m-[5%]"/>
+          <img src={Aggretsuko} className="w-[90%] h-[200px] rounded-lg m-[5%] object-cover"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Aggretsuko</h1>
           <h2 className="text-sm text-center">Released on July 2020</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
@@ -198,13 +220,15 @@ const Games = () => {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.9 }}
-            className="uppercase text-sm m-4 p-1 border rounded-md border-[#252525] hover:bg-orange-300">
+            className="uppercase text-sm m-4 p-2 border rounded-full border-[#252525]">
               Read More
             </motion.button>
           </div>
         </SwiperSlide>
       </Swiper>
-      <HiOutlineArrowNarrowRight className="absolute bottom-24 text-gray-500 scale-150 animate-pulse md:hidden"/>
+      <br/>
+      <p className="text-white absolute bottom-10 animate-pulse md:hidden">Swipe to see more</p>
+      <HiOutlineArrowNarrowRight className="absolute bottom-24 text-gray-500 scale-[3] animate-pulse md:hidden" ref={iconRef}/>
     </div>
   )
 }

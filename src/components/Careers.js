@@ -3,7 +3,7 @@ import CareersHome from './CareersHome'
 
 const Careers = () => {
   return (
-    <div className='h-screen'>
+    <div className='h-screen bg-[#0f2930]'>
       <CareersHome/>
     </div>
   )
