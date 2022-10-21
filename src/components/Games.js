@@ -15,10 +15,13 @@ import gsap from 'gsap'
 import { useRef, useEffect } from 'react'
 import { ScrollTrigger } from "gsap/all";
 import { EffectCoverflow } from "swiper";
+import { useTranslation } from 'react-i18next'
+import { t } from "i18next";
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Games = () => {
+  const { t, i18n } = useTranslation()
   const sliderRef = useRef(null);
   useEffect(() => {
     const el = sliderRef.current;
@@ -81,6 +84,7 @@ const Games = () => {
         text-4xl">Our Games</h3>
       </div>
       <Swiper
+      autoHeight={true}
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
@@ -118,8 +122,8 @@ const Games = () => {
             <img src={Android} className="h-[20px]"/>
             <img src={Windows} className="h-[20px]"/>
           </div>
-          <p className="p-4 text-justify text-sm font-light">
-            Irure aute tempor qui est ipsum et dolore duis veniam. Dolore aliqua commodo ea dolore aute occaecat elit eiusmod.
+          <p className="px-4 text-justify text-sm font-light">
+            {t('Game.Zoids')}
           </p>
           <div className="flex justify-end">
             <motion.button 
@@ -141,8 +145,8 @@ const Games = () => {
             <img src={Apple} className="h-[20px]"/>
             <img src={Android} className="h-[20px]"/>
           </div>
-          <p className="p-4 text-justify text-sm font-light">
-            Irure aute tempor qui est ipsum et dolore duis veniam. Dolore aliqua commodo ea dolore aute occaecat elit eiusmod.
+          <p className="px-4 text-justify text-sm font-light">
+            {t('Game.Shakurel')}
           </p>
           <div className="flex justify-end">
             <motion.button 
@@ -164,8 +168,8 @@ const Games = () => {
             <img src={Apple} className="h-[20px]"/>
             <img src={Android} className="h-[20px]"/>
           </div>
-          <p className="p-4 text-justify text-sm font-light">
-            Irure aute tempor qui est ipsum et dolore duis veniam. Dolore aliqua commodo ea dolore aute occaecat elit eiusmod.
+          <p className="px-4 text-justify text-sm font-light">
+            {t('Game.Bubble')}
           </p>
           <div className="flex justify-end">
             <motion.button 
@@ -180,15 +184,15 @@ const Games = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-md">
-          <img src={Peko} className="w-[90%] h-[200px] rounded-lg m-[5%] object-cover"/>
+          <img src={Peko} className="w-[90%] h-[200px] rounded-lg m-[5%] object-contain"/>
           <h1 className="uppercase text-md font-semibold text-center p-2">Peko Pop: Match 3 Puzzle</h1>
           <h2 className="text-sm text-center">Released on December 2020</h2>
           <div className="flex-row flex justify-center p-2 gap-4">
             <img src={Apple} className="h-[20px]"/>
             <img src={Android} className="h-[20px]"/>
           </div>
-          <p className="p-4 text-justify text-sm font-light">
-            Irure aute tempor qui est ipsum et dolore duis veniam. Dolore aliqua commodo ea dolore aute occaecat elit eiusmod.
+          <p className="px-4 text-justify text-sm font-light">
+            {t('Game.Peko')}
           </p>
           <div className="flex justify-end">
             <motion.button 
@@ -210,8 +214,8 @@ const Games = () => {
             <img src={Apple} className="h-[20px]"/>
             <img src={Android} className="h-[20px]"/>
           </div>
-          <p className="p-4 text-justify text-sm font-light">
-            Irure aute tempor qui est ipsum et dolore duis veniam. Dolore aliqua commodo ea dolore aute occaecat elit eiusmod.
+          <p className="px-4 text-justify text-sm font-light">
+            {t('Game.Aggretsuko')}
           </p>
           <div className="flex justify-end">
             <motion.button 

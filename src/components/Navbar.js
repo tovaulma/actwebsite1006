@@ -5,9 +5,12 @@ import ACTLogoBW from '../assets/images/ACTLogoBW.png'
 import { FaBars } from 'react-icons/fa'
 import MenuItems from './MenuItems'
 import { useState } from 'react'
-
+import { useTranslation } from 'react-i18next'
 const Navbar = () => {
     const [active, setActive] = useState(false)
+
+    
+    const { t, i18n } = useTranslation()
 
     const showMenu = () => {
       setActive(!active)
@@ -49,16 +52,16 @@ const Navbar = () => {
                 </div>
                 <ul className="hidden md:flex uppercase tracking-[4px] font-bold gap-8 p-6">
                     <li className="hover:text-orange-300">
-                        <NavLink to='/'>About</NavLink>
+                        <NavLink to='/'>{t('Navbar.1')}</NavLink>
                     </li>
                     <li className="hover:text-orange-300">
-                        <NavLink to='/Blog'>Blog</NavLink>
+                        <NavLink to='/Blog'>{t('Navbar.2')}</NavLink>
                     </li>
                     <li className="hover:text-orange-300">
-                        <NavLink to='/Team'>Team</NavLink>
+                        <NavLink to='/Team'>{t('Navbar.3')}</NavLink>
                     </li>
                     <li className="hover:text-orange-300">
-                        <NavLink to='/Careers'>Careers</NavLink>
+                        <NavLink to='/Careers'>{t('Navbar.4')}</NavLink>
                     </li>
                 </ul>
 
