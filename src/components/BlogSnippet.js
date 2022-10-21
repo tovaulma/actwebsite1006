@@ -4,6 +4,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import { Link } from "react-router-dom";
 import client from '../client'
 import { ScrollTrigger } from "gsap/all";
+import { motion } from 'framer-motion'
 import bg from '../assets/images/bg.png'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -70,7 +71,7 @@ const BlogSnippet = () => {
     })
   }, [])
   return (
-    <div className='flex flex-col relative justify-evenly'>
+    <div className='md:h-screen flex flex-col relative justify-evenly'>
       <div className="relative" ref={titleRef}>
         <h3 className="uppercase tracking-[0.05rem] text-white font-semibold 
         text-4xl text-center z-20">Recent Blog Posts</h3>
@@ -91,9 +92,14 @@ const BlogSnippet = () => {
         </div>
         <div className='flex justify-center'>
           <Link to="/Blog">
-            <button className='text-white rounded-full border p-2 px-4 tracking-wider'>
-              Read More
-            </button>
+            <motion.button 
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}className='text-black rounded-full border p-2 px-4 tracking-wider uppercase bg-white font-semibold'>
+              News Archive
+            </motion.button>
           </Link>
         </div>
       </div>

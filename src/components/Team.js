@@ -13,7 +13,7 @@ import wonbd from '../assets/images/wonbdpa.PNG'
 const Team = () => {
   return (
     <div className='bg-[#0f2930]'>
-      <div className='h-screen flex flex-col xl:flex-row'>
+      <div className='flex flex-col xl:flex-row'>
         <div className='w-[100%] h-[30%] xl:w-[35%] xl:h-[100%]'>
           <motion.div 
             initial={{

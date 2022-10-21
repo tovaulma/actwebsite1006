@@ -43,6 +43,7 @@ const Blog = () => {
     <div className='bg-white'>
     <div className="h-[100%] flex flex-col">
       <img src={bg} className="h-[300px] w-screen object-cover"/>
+    {/*
       <motion.div 
             initial={{
                 x: 0,
@@ -60,6 +61,11 @@ const Blog = () => {
         <h3 className="uppercase tracking-[0.1rem] font-semibold 
         text-5xl text-center">ACT Blog</h3>
       </motion.div>
+      */}
+      <div className="flex h-[200px] items-center justify-center">
+      <h3 className="uppercase tracking-[0.1rem] font-semibold 
+        text-4xl text-center">News Archive</h3>
+      </div>
       <br/>
       <div className='grid grid-cols-1 xl:grid-cols-2 justify-items-center'>
         {posts.map((post) => (
